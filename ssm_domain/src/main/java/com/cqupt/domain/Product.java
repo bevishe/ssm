@@ -1,20 +1,28 @@
 package com.cqupt.domain;
 
-import org.springframework.test.context.junit.jupiter.SpringExtension;
+import com.cqupt.ssm.utils.DateUtils;
+import org.springframework.format.annotation.DateTimeFormat;
+import org.springframework.format.annotation.NumberFormat;
 
-import java.sql.Date;
+import java.util.Date;
 
 /**
  * 产品信息
  *
+ *
  */
+
+
 public class Product {
     private String id;      // 主键
     private String productNum; //编号 唯一
     private String productName; //名称
     private String cityName;   // 出发城市
+
+    @DateTimeFormat(pattern = "yyyy-MM-dd HH:mm")
     private Date departureTime;  // 出发时间
     private String departureTimeStr;
+    @NumberFormat(pattern = "#.####")
     private double productPrice;   // 产品价格
     private String productDesc;    // 产品描述
     private Integer productStatus;  // 状态 0 关闭 1开启
@@ -61,6 +69,9 @@ public class Product {
     }
 
     public String getDepartureTimeStr() {
+        if(departureTime != null){
+            departureTimeStr = DateUtils.data2StringF(departureTime,"yyyy-MM-dd HH:mm");
+        }
         return departureTimeStr;
     }
 
@@ -93,6 +104,12 @@ public class Product {
     }
 
     public String getProductStatusStr() {
+        // 0 关闭 1 开启
+        if(productStatus != null){
+            if(productStatus.equals(0))
+                this.setProductStatusStr("关闭");
+            else this.setProductStatusStr("开启");
+        }
         return productStatusStr;
     }
 
