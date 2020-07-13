@@ -1,15 +1,22 @@
 package com.cqupt.domain;
 
+import com.cqupt.ssm.utils.DateUtils;
+import org.springframework.format.annotation.DateTimeFormat;
+
 import java.util.Date;
 import java.util.List;
 
 public class Orders {
 
+
+
     private String id;
     private String orderNum;
+    @DateTimeFormat(pattern = "yyyy-MM-dd HH:mm:ss")
     private Date orderTime;
     private String orderTimeStr;
     private int orderStatus;
+    private String orderStatusStr;
     private int peopleCount;
     private Product product;
     private List<Traveller> travellers;
@@ -18,6 +25,18 @@ public class Orders {
     private String payTypeStr;
     private String orderDesc;
 
+    public String getOrderStatusStr() {
+        if(orderStatus == 1){
+            orderStatusStr = "支付";
+        }else{
+            orderStatusStr = "未支付";
+        }
+        return orderStatusStr;
+    }
+
+    public void setOrderStatusStr(String orderStatusStr) {
+        this.orderStatusStr = orderStatusStr;
+    }
 
     public String getId() {
         return id;
@@ -44,6 +63,7 @@ public class Orders {
     }
 
     public String getOrderTimeStr() {
+        if(orderTime != null) orderTimeStr = DateUtils.data2String(orderTime,"yyyy-MM-dd HH:mm:ss");
         return orderTimeStr;
     }
 
@@ -100,6 +120,14 @@ public class Orders {
     }
 
     public String getPayTypeStr() {
+        // 0 支付宝 1 微信
+        if(payType == 0){
+            payTypeStr = "支付宝";
+        }else if(payType == 1){
+            payTypeStr = "微信";
+        }else{
+            payTypeStr = "其他";
+        }
         return payTypeStr;
     }
 

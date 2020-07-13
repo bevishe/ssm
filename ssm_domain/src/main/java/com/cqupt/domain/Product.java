@@ -70,7 +70,7 @@ public class Product {
 
     public String getDepartureTimeStr() {
         if(departureTime != null){
-            departureTimeStr = DateUtils.data2StringF(departureTime,"yyyy-MM-dd HH:mm");
+            departureTimeStr = DateUtils.data2String(departureTime,"yyyy-MM-dd HH:mm");
         }
         return departureTimeStr;
     }
@@ -116,7 +116,7 @@ public class Product {
     public void setProductStatusStr(String productStatusStr) {
         this.productStatusStr = productStatusStr;
     }
-
-
-
 }
+
+
+

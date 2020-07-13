@@ -14,6 +14,11 @@ public interface IProductDao {
     @Select("select * from product")
     public List<Product> findAll() throws Exception;
 
+
+    // 根据id查询产品
+    @Select("select * from product  where id=#{id}")
+    public Product findById(String id) throws Exception;
+
     // 向数据库中添加产品
 
     @Insert("insert into product(id,productNum,productName,cityName,DepartureTime,productPrice,productDesc,productStatus) values({1},#{productNum},#{productName},#{cityName},#{departureTime},#{productPrice},#{productDesc},#{productStatus})")

@@ -8,10 +8,10 @@ public class Traveller {
     private String name;
     private String sex;
     private String phoneNum;
-    private Integer credentialsType;
-    private String credenttialsTypeStr;
+    private Integer credentialsType;  // 0身份证 1 护照  2军官证
+    private String credentialsTypeStr;
     private String credentialsNum;
-    private Integer travellerType;
+    private Integer travellerType;   // 0 成人 1 儿童
     private String travellerTypeStr;
 
 
@@ -48,6 +48,7 @@ public class Traveller {
     }
 
     public Integer getCredentialsType() {
+
         return credentialsType;
     }
 
@@ -55,12 +56,20 @@ public class Traveller {
         this.credentialsType = credentialsType;
     }
 
-    public String getCredenttialsTypeStr() {
-        return credenttialsTypeStr;
+    public String getCredentialsTypeStr() {
+        if(credentialsType != null ){
+            if(credentialsType == 0)
+                credentialsTypeStr = "身份证";
+            else if(credentialsType == 1)
+                credentialsTypeStr = "护照";
+            else if(credentialsType == 2)
+                credentialsTypeStr = "军官证";
+        }
+        return credentialsTypeStr;
     }
 
-    public void setCredenttialsTypeStr(String credenttialsTypeStr) {
-        this.credenttialsTypeStr = credenttialsTypeStr;
+    public void setCredentialsTypeStr(String credentialsTypeStr) {
+        this.credentialsTypeStr = credentialsTypeStr;
     }
 
     public String getCredentialsNum() {
@@ -80,6 +89,11 @@ public class Traveller {
     }
 
     public String getTravellerTypeStr() {
+        if(travellerType != null){
+            if(travellerType == 0)
+                travellerTypeStr = "成人";
+            else travellerTypeStr = "儿童";
+        }
         return travellerTypeStr;
     }
 

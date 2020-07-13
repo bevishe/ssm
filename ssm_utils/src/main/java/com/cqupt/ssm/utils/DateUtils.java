@@ -9,7 +9,7 @@ public class DateUtils {
 
 
     // 日期转换成字符串
-    public static String data2StringF(Date date,String patt){
+    public static String data2String(Date date,String patt){
         SimpleDateFormat sdf = new SimpleDateFormat(patt);
         String formate = sdf.format(date);
         return formate;

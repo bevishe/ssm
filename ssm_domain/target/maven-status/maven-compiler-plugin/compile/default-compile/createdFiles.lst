@@ -1,1 +1,7 @@
+com\cqupt\domain\Role.class
+com\cqupt\domain\Member.class
+com\cqupt\domain\Permission.class
+com\cqupt\domain\Orders.class
+com\cqupt\domain\Traveller.class
 com\cqupt\domain\Product.class
+com\cqupt\domain\Users.class
