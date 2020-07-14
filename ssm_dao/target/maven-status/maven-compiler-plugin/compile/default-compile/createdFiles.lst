@@ -1,4 +1,6 @@
 com\cqupt\dao\ITravellerDao.class
+com\cqupt\dao\IUserDao.class
 com\cqupt\dao\IProductDao.class
+com\cqupt\dao\IRoleDao.class
 com\cqupt\dao\IMemberDao.class
 com\cqupt\dao\IOrdersDao.class

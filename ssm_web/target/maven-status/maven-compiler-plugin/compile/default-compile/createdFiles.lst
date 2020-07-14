@@ -1,2 +1,4 @@
 com\cqupt\controller\ProductController.class
+com\cqupt\controller\UsersController.class
 com\cqupt\controller\OrdersController.class
+com\cqupt\controller\RoleController.class

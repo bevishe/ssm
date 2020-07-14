@@ -1,4 +1,8 @@
 D:\JAVAHOME\ssm\ssm_service\src\main\java\com\cqupt\service\impl\ProdcutServiceImpl.java
+D:\JAVAHOME\ssm\ssm_service\src\main\java\com\cqupt\service\impl\UserServiceImpl.java
 D:\JAVAHOME\ssm\ssm_service\src\main\java\com\cqupt\service\IOrdersService.java
 D:\JAVAHOME\ssm\ssm_service\src\main\java\com\cqupt\service\impl\OrdersServiceImpl.java
+D:\JAVAHOME\ssm\ssm_service\src\main\java\com\cqupt\service\impl\RoleServiceImpl.java
 D:\JAVAHOME\ssm\ssm_service\src\main\java\com\cqupt\service\IProductService.java
+D:\JAVAHOME\ssm\ssm_service\src\main\java\com\cqupt\service\IUserService.java
+D:\JAVAHOME\ssm\ssm_service\src\main\java\com\cqupt\service\IRoleService.java

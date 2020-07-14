@@ -1,4 +1,8 @@
-com\cqupt\service\IOrdersService.class
+com\cqupt\service\IUserService.class
 com\cqupt\service\impl\ProdcutServiceImpl.class
 com\cqupt\service\IProductService.class
+com\cqupt\service\IRoleService.class
+com\cqupt\service\impl\UserServiceImpl.class
+com\cqupt\service\IOrdersService.class
+com\cqupt\service\impl\RoleServiceImpl.class
 com\cqupt\service\impl\OrdersServiceImpl.class
