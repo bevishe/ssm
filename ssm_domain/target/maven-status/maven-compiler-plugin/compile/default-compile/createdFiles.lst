@@ -1,6 +1,7 @@
 com\cqupt\domain\Role.class
 com\cqupt\domain\Member.class
 com\cqupt\domain\UsersInfo.class
+com\cqupt\domain\SysLog.class
 com\cqupt\domain\Permission.class
 com\cqupt\domain\Orders.class
 com\cqupt\domain\Traveller.class

@@ -39,5 +39,8 @@
     <orderEntry type="library" name="Maven: org.springframework:spring-beans:5.0.2.RELEASE" level="project" />
     <orderEntry type="module" module-name="ssm_service" />
     <orderEntry type="module" module-name="ssm_domain" />
+    <orderEntry type="library" name="Maven: org.aspectj:aspectjweaver:1.6.8" level="project" />
+    <orderEntry type="library" name="Maven: javax.servlet:javax.servlet-api:3.1.0" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework.security:spring-security-core:5.0.1.RELEASE" level="project" />
   </component>
 </module>

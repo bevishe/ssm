@@ -36,10 +36,6 @@ public class UserServiceImpl implements IUserService {
         return userDao.findAll();
     }
 
-    @Override
-    public UsersInfo findById(String userId) throws Exception {
-        return userDao.findByUserId(userId);
-    }
 
     @Override
     public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
@@ -64,5 +60,12 @@ public class UserServiceImpl implements IUserService {
             list.add(new SimpleGrantedAuthority("ROLE_"+role.getRoleName()));
         }
         return list;
+    }
+
+
+    // 根据用户id来查询用户 已经用户的角色 和该角色具有的权限
+    @Override
+    public UsersInfo findById(String id) throws Exception {
+        return userDao.findById(id);
     }
 }

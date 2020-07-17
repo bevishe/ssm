@@ -49,4 +49,19 @@ public interface IUserDao {
 
     })
     public UsersInfo findByUserId(String userId) throws Exception;
+
+
+    // 通过用户的id来查询用户的基本信息以及该用户的角色 已经 角色的权限
+    @Select("select * from users where id = #{id}")
+    @Results({
+            @Result(id=true,property = "id",column = "id"),
+            @Result(property = "username",column = "username"),
+            @Result(property = "email",column = "email"),
+            @Result(property = "phoneNum",column = "phoneNum"),
+            @Result(property = "passWord",column = "PASSWORD"),
+            @Result(property = "status",column = "STATUS"),
+            @Result(property = "roles",column = "id",javaType = List.class,many = @Many(select = "com.cqupt.dao.IRoleDao.findByUsersId"))
+    })
+    public UsersInfo findById(String id);
+
 }

@@ -1,4 +1,7 @@
 D:\JAVAHOME\ssm\ssm_web\src\main\java\com\cqupt\controller\UsersController.java
+D:\JAVAHOME\ssm\ssm_web\src\main\java\com\cqupt\controller\PermissionController.java
+D:\JAVAHOME\ssm\ssm_web\src\main\java\com\cqupt\controller\LogAop.java
 D:\JAVAHOME\ssm\ssm_web\src\main\java\com\cqupt\controller\RoleController.java
 D:\JAVAHOME\ssm\ssm_web\src\main\java\com\cqupt\controller\ProductController.java
 D:\JAVAHOME\ssm\ssm_web\src\main\java\com\cqupt\controller\OrdersController.java
+D:\JAVAHOME\ssm\ssm_web\src\main\java\com\cqupt\controller\SysLogController.java

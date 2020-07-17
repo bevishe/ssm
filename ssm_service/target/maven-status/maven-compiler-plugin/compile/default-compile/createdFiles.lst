@@ -1,5 +1,9 @@
+com\cqupt\service\ISysLogService.class
+com\cqupt\service\impl\SysLogServiceImpl.class
+com\cqupt\service\impl\PermissionServiceImpl.class
 com\cqupt\service\IUserService.class
 com\cqupt\service\impl\ProdcutServiceImpl.class
+com\cqupt\service\IPermissionService.class
 com\cqupt\service\IProductService.class
 com\cqupt\service\IRoleService.class
 com\cqupt\service\impl\UserServiceImpl.class

@@ -1,3 +1,6 @@
+com\cqupt\controller\LogAop.class
+com\cqupt\controller\PermissionController.class
+com\cqupt\controller\SysLogController.class
 com\cqupt\controller\ProductController.class
 com\cqupt\controller\UsersController.class
 com\cqupt\controller\OrdersController.class

@@ -11,5 +11,7 @@ public interface IUserService extends UserDetailsService {
 
     public void save(UsersInfo usersInfo) throws Exception;
 
-    public UsersInfo findById(String userId) throws Exception;
+
+    // 通过用户的id找到对应的用户 和 所用的角色
+    public UsersInfo findById(String id) throws Exception;
 }

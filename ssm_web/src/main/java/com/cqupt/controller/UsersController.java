@@ -1,6 +1,5 @@
 package com.cqupt.controller;
 
-
 import com.cqupt.domain.UsersInfo;
 import com.cqupt.service.IUserService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -38,11 +37,19 @@ public class UsersController {
     public ModelAndView findById(String id) throws Exception {
         ModelAndView mv = new ModelAndView();
         UsersInfo usersInfo = userService.findById(id);
-
         mv.addObject("user",usersInfo);
         mv.setViewName("user-show");
         return mv;
     }
 
+    // 在用户list页面 通过添加角色按钮给当前用户添加角色
+    @RequestMapping("findUserByIdAndAllRole.do")
+    public ModelAndView findUserByIdAndAllRole(String id) throws Exception{
+        ModelAndView mv = new ModelAndView();
+        UsersInfo usersInfo = userService.findById(id);
+        //
+
+        return mv;
+    }
 
 }

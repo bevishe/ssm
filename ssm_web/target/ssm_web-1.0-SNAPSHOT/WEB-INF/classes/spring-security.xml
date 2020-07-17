@@ -27,9 +27,9 @@
         <security:form-login
                 login-page="/login.jsp"
                 login-processing-url="/login.do"
-                default-target-url="/index.jsp"
+                default-target-url="/pages/main.jsp"
                 authentication-failure-url="/failer.jsp"
-                authentication-success-forward-url="/index.jsp"
+                authentication-success-forward-url="/pages/main.jsp"
         />
 
         <!-- 关闭跨域请求 -->
